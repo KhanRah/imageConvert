@@ -1,10 +1,9 @@
+import 'dart:async';
+
 import 'package:image/image.dart';
 import 'dart:io';
 
 Future main() async {
-  // Read an image from file (webp in this case).
-  // decodeImage will identify the format of the image and use the appropriate
-  // decoder.
   int port = 8085;
   var server  = await HttpServer.bind('localhost', 8085);
   server.listen((HttpRequest request)
